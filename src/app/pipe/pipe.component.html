@@ -57,12 +57,34 @@
       <td>{{ percentB | percent: '2.2-3'}}</td>
     </tr>
 
-
     <!-- Currency Pipe-->
     <tr>
       <td>Currency</td>
       <td>{{ courseObj.price }}</td>
       <td>{{ courseObj.price | currency:'USD':true:'2.1-3'}}</td>
+    </tr>
+
+    <!-- Date-->
+    <tr>
+      <td>Date</td>
+      <td>{{ courseObj.date }}</td>
+      <td>{{ courseObj.date | date:'dd-MM-yyyy HH:mm:ss'}}</td>
+    </tr>
+
+
+    <!-- Json-->
+    <tr>
+      <td>Date</td>
+      <td>{{ courseObj }}</td>
+      <td>{{courseObj | json}}</td>
+    </tr>
+
+
+     <!-- Kết hợp Pipes-->
+     <tr>
+      <td>Date</td>
+      <td>{{ courseObj }}</td>
+      <td>{{courseObj | json | uppercase | lowercase }}</td>
     </tr>
 
 	</tbody>

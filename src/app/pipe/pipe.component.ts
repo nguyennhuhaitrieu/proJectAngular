@@ -17,4 +17,5 @@ export class PipeComponent {
   percentA: number = 0.123;
   percentB: number = 2.157;
 
+
 }
