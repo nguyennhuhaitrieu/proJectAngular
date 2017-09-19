@@ -1,0 +1,54 @@
+<table class="table table-bordered table-striped table-hover">
+	<thead>
+		<tr class="info">
+			<th width="20%">Name</th>
+			<th width="40%">Input</th>
+			<th width="40%">Output</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- uppercase -->
+		<tr>
+			<td>Uppercase</td>
+			<td>{{ courseObj.name }}</td>
+			<td>{{ courseObj.name | uppercase }}</td>
+    </tr>
+
+    <!-- lowercase -->
+		<tr>
+			<td>Lowercase</td>
+			<td>{{ courseObj.name }}</td>
+			<td>{{ courseObj.name | lowercase }}</td>
+    </tr>
+
+    <!-- slice string -->
+		<tr>
+			<td>Lowercase</td>
+			<td>{{ courseObj.name }}</td>
+			<td>{{ courseObj.name | slice: 0:4  }}</td>
+    </tr>
+
+    <!-- slice for array -->
+		<tr>
+			<td>Lowercase</td>
+			<td >
+        <ul>
+          <li *ngFor ="let course of courseObj.require ">{{ course }}</li>
+        </ul>
+      </td>
+			<td>
+        <ul>
+            <li *ngFor ="let course of courseObj.require | slice: -1 ">{{ course  }}</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- decimal-->
+    <tr>
+        <td>Lowercase</td>
+        <td>{{ courseObj.price }}</td>
+        <td>{{ courseObj.price | number:'1.0-2'}}</td>
+      </tr>
+
+	</tbody>
+</table>
