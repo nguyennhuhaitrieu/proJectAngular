@@ -45,10 +45,25 @@
 
     <!-- decimal-->
     <tr>
-        <td>Lowercase</td>
-        <td>{{ courseObj.price }}</td>
-        <td>{{ courseObj.price | number:'1.0-2'}}</td>
-      </tr>
+      <td>Lowercase</td>
+      <td>{{ courseObj.price }}</td>
+      <td>{{ courseObj.price | number:'1.0-2'}}</td>
+    </tr>
+
+    <!-- percent-->
+    <tr>
+      <td>Lowercase</td>
+      <td>{{ percentB }}</td>
+      <td>{{ percentB | percent: '2.2-3'}}</td>
+    </tr>
+
+
+    <!-- Currency Pipe-->
+    <tr>
+      <td>Currency</td>
+      <td>{{ courseObj.price }}</td>
+      <td>{{ courseObj.price | currency:'USD':true:'2.1-3'}}</td>
+    </tr>
 
 	</tbody>
 </table>

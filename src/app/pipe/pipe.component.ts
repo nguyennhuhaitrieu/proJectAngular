@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-pipe',
   templateUrl: './pipe.component.html',
 })
+
 export class PipeComponent {
   courseObj : any = {
     'id'    : 20 ,
@@ -12,4 +13,8 @@ export class PipeComponent {
     'price' : 69.87654,
     'require' : ['jquery','html','css','react','typescript']
   }
+
+  percentA: number = 0.123;
+  percentB: number = 2.157;
+
 }
