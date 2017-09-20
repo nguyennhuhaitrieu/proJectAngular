@@ -1,0 +1,47 @@
+<table class="table table-bordered table-striped table-hover">
+	<thead>
+		<tr class="info">
+			<th width="20%">Name</th>
+			<th width="40%">Input</th>
+			<th width="40%">Output</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- Capitalize -->
+		<tr>
+			<td>Capitalize</td>
+			<td>{{ text }}</td>
+			<td>{{ text | capitalize }}</td>
+    </tr>
+
+
+    <!-- Array Numbers -->
+		<tr>
+			<td>Array Number EVENT</td>
+			<td>
+        <ul>
+          <li *ngFor="let num of arrNumber">{{ num }}</li>
+        </ul>
+      </td>
+			<td>
+        <ul>
+            <li *ngFor="let num of arrNumber | array">{{ num }}</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+        <td>Array Number OLD</td>
+        <td>
+          <ul>
+            <li *ngFor="let num of arrNumber">{{ num }}</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li *ngFor="let num of arrNumber | array:'odd'">{{ num }}</li>
+          </ul>
+        </td>
+      </tr>
+	</tbody>
+</table>

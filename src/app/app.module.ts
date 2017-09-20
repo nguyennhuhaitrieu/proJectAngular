@@ -6,13 +6,19 @@ import { EventComponent } from './binding/event.component';
 import { ProjectSettingTemplateComponent } from './project-setting-template/projectSettingTemplate.component';
 
 import { PipeComponent } from './pipe/pipe.component';
+import { CustomPipeComponent } from './custom-pipe/customPipe.component';
+import { CapitalizePipe } from './custom-pipe/capitalize.pipe';
+import { ArrayNumberPipe } from './custom-pipe/arrayNumber.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventComponent,
     ProjectSettingTemplateComponent,
-    PipeComponent
+    PipeComponent,
+    CustomPipeComponent,
+    CapitalizePipe,
+    ArrayNumberPipe
   ],
   imports: [
     BrowserModule
