@@ -15,7 +15,7 @@ export class CustomPipeComponent {
   }
 
   // Capitalize
-  text: string = "Angular 2 Is very easy";
+  text: string = "angular 2 is very easy";
 
   //Array NUmber
   arrNumber: number[] = [8,9,5,4,3,2,1,5,9] ;
