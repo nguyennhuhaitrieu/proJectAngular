@@ -14,7 +14,6 @@
 			<td>{{ text | capitalize }}</td>
     </tr>
 
-
     <!-- Array Numbers Event -->
 		<tr>
 			<td>Array Number EVENT</td>
@@ -43,6 +42,44 @@
               <li *ngFor="let num of arrNumber | array:'odd'">{{ num }}</li>
           </ul>
         </td>
-      </tr>
+    </tr>
+
+    <!-- Sort ASC -->
+    <tr>
+      <td>Sort -Asc</td>
+      <td>
+        <ul>
+          <li *ngFor="let course of courseObj.require">{{ course }}</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li *ngFor="let course of courseObj.require | sortArray">{{ course }}</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Sort DESC -->
+    <tr>
+      <td>Sort - DESC</td>
+      <td>
+        <ul>
+          <li *ngFor="let course of courseObj.require">{{ course }}</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li *ngFor="let course of courseObj.require | sortArray:'DESC' ">{{ course }}</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Capitalize -->
+		<tr>
+			<td>Summary String </td>
+			<td>{{ summaryString}}</td>
+			<td>{{ summaryString | summaryString:'20'}}</td>
+    </tr>
+
 	</tbody>
 </table>

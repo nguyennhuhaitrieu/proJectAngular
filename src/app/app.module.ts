@@ -9,6 +9,8 @@ import { PipeComponent } from './pipe/pipe.component';
 import { CustomPipeComponent } from './custom-pipe/customPipe.component';
 import { CapitalizePipe } from './custom-pipe/capitalize.pipe';
 import { ArrayNumberPipe } from './custom-pipe/arrayNumber.pipe';
+import { SortArrayPipe } from './custom-pipe/sortArray.pipe';
+import { SummaryString } from './custom-pipe/summaryString.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ArrayNumberPipe } from './custom-pipe/arrayNumber.pipe';
     PipeComponent,
     CustomPipeComponent,
     CapitalizePipe,
-    ArrayNumberPipe
+    ArrayNumberPipe,
+    SortArrayPipe,
+    SummaryString
   ],
   imports: [
     BrowserModule
