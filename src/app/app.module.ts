@@ -11,6 +11,7 @@ import { CapitalizePipe } from './custom-pipe/capitalize.pipe';
 import { ArrayNumberPipe } from './custom-pipe/arrayNumber.pipe';
 import { SortArrayPipe } from './custom-pipe/sortArray.pipe';
 import { SummaryString } from './custom-pipe/summaryString.pipe';
+import { ArrCategoryPipe } from './custom-pipe/arrCategory.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SummaryString } from './custom-pipe/summaryString.pipe';
     CapitalizePipe,
     ArrayNumberPipe,
     SortArrayPipe,
-    SummaryString
+    SummaryString,
+    ArrCategoryPipe
   ],
   imports: [
     BrowserModule

@@ -81,5 +81,18 @@
 			<td>{{ summaryString | summaryString:'20'}}</td>
     </tr>
 
+
+    <tr>
+      <td>Arrary Category</td>
+      <td>
+        <ul>
+          <li *ngFor="let cate of arrCategory">{{ cate }}</li>
+        </ul>
+      </td>
+      <td>
+          {{ arrCategory |sortArray |category |uppercase }}
+      </td>
+    </tr>
+
 	</tbody>
 </table>

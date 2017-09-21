@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ArrayNumberPipe implements PipeTransform {
   transform(arrayInput: number[], args: any): any {
     return arrayInput.filter(value => {
-      console.log(args);
+      //console.log(args);
       if(args === "odd") {
         return value % 2 !=0;
       }
